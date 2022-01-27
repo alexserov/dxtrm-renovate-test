@@ -1,0 +1,39 @@
+{
+    "extends": [
+        "config:base"
+    ],
+    "baseBranches": [
+        "21_2",
+        "22_1"
+    ],
+    "labels": [
+        "dependencies"
+    ],
+    "lockFileMaintenance": {
+        "enabled": true,
+        "schedule": [
+            "every 1 day"
+        ]
+    },
+    "vulnerabilityAlerts": {
+        "enabled": true
+    },
+    "packageRules": [
+        {
+            "packagePatterns": [
+                "*"
+            ],
+            "enabled": false
+        }
+    ],
+    "assignAutomerge": true,
+    "reviewers": [
+        "team:devextreme-core"
+    ],
+    "ignorePaths": [
+        ".github"
+    ],
+    "constraints": {
+        "npm": "^7.0.0"
+    }
+}
